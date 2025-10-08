@@ -7,7 +7,7 @@ export default function Navbar() {
                 <h1 className="text-xl font-bold"> Alex | Portafolio</h1>
                 <nav className="space-x-4">
                     <a href="#about" className="hover:text-gray-300">Sobre mí</a>
-                    <a href="#projects" className="hover:text-gray-300">Proyectos</a>
+                    <a href="#feedback" className="hover:text-gray-300">Retroalimentación</a>
                     <a href="#skills" className="hover:text-gray-300">Habilidades</a>
                     <a href="#contact" className="hover:text-gray-300">Contacto</a>
                 </nav>

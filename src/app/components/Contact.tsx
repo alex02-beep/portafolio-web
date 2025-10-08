@@ -1,100 +1,114 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import { useState, ChangeEvent, FormEvent } from "react";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    alert("¡Gracias por tu mensaje! Me pondré en contacto pronto.");
+    setFormData({ name: "", email: "", message: "" });
+  };
+
   return (
-    <section
+    <motion.section
       id="contact"
-      className="py-20 bg-gradient-to-br from-indigo-700 to-blue-600 text-white text-center relative overflow-hidden"
+      className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-indigo-700 to-blue-600 text-white text-center relative overflow-hidden py-20 px-8"
+      initial={{ opacity: 0, y: 80 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: false }}
     >
-      {/* Círculos decorativos */}
-      <div className="absolute -top-20 -left-20 w-72 h-72 bg-blue-400/30 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-indigo-900/30 rounded-full blur-3xl"></div>
+      {/* Efectos decorativos */}
+      <div className="absolute -top-20 -right-20 w-72 h-72 bg-white/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-72 h-72 bg-indigo-500/20 rounded-full blur-3xl"></div>
 
-      <motion.h2
-        className="text-4xl font-bold mb-10 relative z-10"
-        initial={{ opacity: 0, y: -50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
-      >
-        Contáctame
-      </motion.h2>
-
-      {/* Formulario */}
-      <motion.form
-        className="relative z-10 max-w-lg mx-auto bg-white text-gray-900 p-8 rounded-2xl shadow-xl space-y-6"
+      {/* Contenedor del formulario */}
+      <motion.div
+        className="relative z-10 w-full max-w-4xl bg-white/10 backdrop-blur-lg rounded-2xl p-10 shadow-xl"
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6 }}
-        onSubmit={(e) => {
-          e.preventDefault();
-          alert("Mensaje enviado correctamente (demo). 🚀");
-        }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        viewport={{ once: false }}
       >
-        <div>
-          <label className="block text-left font-semibold mb-2">Nombre</label>
-          <input
+        <h2 className="text-4xl font-bold mb-6 text-white">Contáctame</h2>
+        <p className="text-blue-100 mb-10">
+          Si tienes un proyecto, una idea o simplemente deseas saludar, ¡envíame un mensaje!
+        </p>
+
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col space-y-6 text-left max-w-2xl mx-auto"
+        >
+          <motion.input
             type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
             placeholder="Tu nombre"
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="p-4 rounded-lg bg-white/20 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-300 transition-all"
             required
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            viewport={{ once: false }}
           />
-        </div>
 
-        <div>
-          <label className="block text-left font-semibold mb-2">Correo electrónico</label>
-          <input
+          <motion.input
             type="email"
-            placeholder="tucorreo@ejemplo.com"
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="Tu correo electrónico"
+            className="p-4 rounded-lg bg-white/20 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-300 transition-all"
             required
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            viewport={{ once: false }}
           />
-        </div>
 
-        <div>
-          <label className="block text-left font-semibold mb-2">Mensaje</label>
-          <textarea
-            placeholder="Escribe tu mensaje..."
-            rows={4}
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          <motion.textarea
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            placeholder="Escribe tu mensaje aquí..."
+            rows={5} // ← Corregido: número, no cadena
+            className="p-4 rounded-lg bg-white/20 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-300 transition-all"
             required
-          />
-        </div>
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            viewport={{ once: false }}
+          ></motion.textarea>
 
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          type="submit"
-          className="w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition-colors"
-        >
-          Enviar mensaje
-        </motion.button>
-      </motion.form>
-
-      {/* Redes sociales */}
-      <div className="mt-12 flex justify-center gap-8 relative z-10">
-        <a href="mailto:tuemail@correo.com" className="hover:text-blue-300 text-2xl">
-          <FaEnvelope />
-        </a>
-        <a
-          href="https://github.com/tuusuario"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-blue-300 text-2xl"
-        >
-          <FaGithub />
-        </a>
-        <a
-          href="https://linkedin.com/in/tuusuario"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-blue-300 text-2xl"
-        >
-          <FaLinkedin />
-        </a>
-      </div>
-    </section>
+          <motion.button
+            type="submit"
+            className="bg-white text-blue-700 font-semibold py-3 px-8 rounded-full shadow-md hover:bg-blue-100 hover:shadow-lg transition-all duration-300 self-center"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+            viewport={{ once: false }}
+          >
+            Enviar mensaje
+          </motion.button>
+        </form>
+      </motion.div>
+    </motion.section>
   );
 }

@@ -6,11 +6,11 @@ export default function ThemeToggle() {
   const [theme, setTheme] = useState("light");
 
   useEffect(() => {
-    // Leer el tema almacenado o usar el predeterminado
+    
     const savedTheme = localStorage.getItem("theme") || "light";
     setTheme(savedTheme);
 
-    const root = document.documentElement; // <html>
+    const root = document.documentElement; 
     if (savedTheme === "dark") {
       root.classList.add("dark");
     } else {

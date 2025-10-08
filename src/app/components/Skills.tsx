@@ -1,63 +1,81 @@
 "use client";
+
 import { motion } from "framer-motion";
-import { SiFlask, SiNextdotjs, SiTailwindcss, SiMysql } from "react-icons/si";
-import { VscVscode } from "react-icons/vsc";
+import { useEffect, useState } from "react";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaPython,
+  FaDatabase,
+  FaReact,
+} from "react-icons/fa";
+
+const skillsData = [
+  { name: "HTML5", icon: <FaHtml5 size={50} className="text-orange-500" />, level: 95 },
+  { name: "CSS3", icon: <FaCss3Alt size={50} className="text-blue-500" />, level: 90 },
+  { name: "JavaScript", icon: <FaJs size={50} className="text-yellow-400" />, level: 85 },
+  { name: "Python", icon: <FaPython size={50} className="text-blue-400" />, level: 88 },
+  { name: "SQL Server", icon: <FaDatabase size={50} className="text-red-500" />, level: 82 },
+  { name: "React", icon: <FaReact size={50} className="text-cyan-400" />, level: 80 },
+];
 
 export default function Skills() {
-  const skills = [
-    { icon: <SiNextdotjs className="text-gray-800 dark:text-white text-5xl" />, name: "Next.js" },
-    { icon: <SiFlask className="text-green-600 text-5xl" />, name: "Flask" },
-    { icon: <SiTailwindcss className="text-sky-500 text-5xl" />, name: "Tailwind CSS" },
-    { icon: <SiMysql className="text-blue-600 text-5xl" />, name: "MySQL" },
-    { icon: <VscVscode className="text-blue-500 text-5xl" />, name: "VS Code" },
-  ];
+  const [progressVisible, setProgressVisible] = useState(false);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => setProgressVisible(true), 400);
+    return () => clearTimeout(timeout);
+  }, []);
 
   return (
-    <section
+    <motion.section
       id="skills"
-      className="py-20 bg-gradient-to-b from-white via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900"
+      className="min-h-screen flex flex-col items-center justify-center py-20 bg-gradient-to-b from-white via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900"
+      initial={{ opacity: 0, y: 80 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: false }}
     >
-      <motion.div
-        className="max-w-6xl mx-auto px-6 text-center"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ amount: 0.3 }} // 👈 se reproduce cada vez que entra al viewport
-      >
-        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-white mb-12">
-          Tecnologías principales
-        </h2>
+      <h2 className="text-4xl font-bold mb-12 text-gray-800 dark:text-white">Habilidades</h2>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-10 justify-items-center">
-          {skills.map((skill, index) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 w-full max-w-6xl px-6">
+        {skillsData.map((skill, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            viewport={{ once: false }}
+            className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl"
+          >
             <motion.div
-              key={index}
-              className="flex flex-col items-center justify-center bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 transition-transform transform hover:scale-110 hover:shadow-2xl cursor-pointer w-36 h-36"
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ amount: 0.2 }} // 👈 igual: se activa cada vez que se vuelve visible
-              whileHover={{ y: -10 }}
+              whileHover={{ scale: 1.15, rotate: 5 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="mb-3"
             >
               {skill.icon}
-              <p className="mt-4 text-lg font-semibold text-gray-700 dark:text-gray-200">
-                {skill.name}
-              </p>
             </motion.div>
-          ))}
-        </div>
+            <h3 className="text-lg font-semibold text-gray-700 dark:text-white mb-3">
+              {skill.name}
+            </h3>
 
-        <motion.p
-          className="mt-16 text-gray-700 dark:text-gray-300 text-lg max-w-2xl mx-auto"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          viewport={{ amount: 0.3 }} // 👈 permite que se reactive al hacer scroll
-        >
-          Estas son las herramientas que utilizo para construir aplicaciones modernas, rápidas y con un diseño optimizado.  
-          Cada tecnología representa una parte clave de mi crecimiento como desarrollador.
-        </motion.p>
-      </motion.div>
-    </section>
+            {/* Barra de progreso */}
+            <div className="w-full h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+              <motion.div
+                className="h-3 bg-blue-500 dark:bg-indigo-500 rounded-full"
+                initial={{ width: 0 }}
+                animate={{ width: progressVisible ? `${skill.level}%` : 0 }}
+                transition={{ duration: 1.2, ease: "easeInOut" }}
+              />
+            </div>
+
+            <span className="text-sm text-gray-600 dark:text-gray-400 mt-2">
+              {skill.level}%
+            </span>
+          </motion.div>
+        ))}
+      </div>
+    </motion.section>
   );
 }
