@@ -24,7 +24,7 @@ export default function About() {
 
         <p className="text-lg md:text-xl leading-relaxed mb-12 max-w-3xl mx-auto">
           ¡Hola! Soy <span className="font-semibold text-blue-600">Alex</span>, estudiante de{" "}
-          <strong>Ingeniería de Sistemas</strong> apasionado por el desarrollo web,
+          Ingeniería de Sistemas apasionado por el desarrollo web,
           la optimización de sistemas y el diseño de experiencias digitales.
           Me encanta aprender tecnologías nuevas y transformar ideas en proyectos reales
           que aporten valor a las personas y empresas.
@@ -40,7 +40,7 @@ export default function About() {
             {
               icon: <FaCode className="text-5xl text-violet-500 mx-auto mb-4" />,
               title: "Desarrollo",
-              text: "Experiencia en HTML, CSS, JavaScript, SQL Server, Flask y frameworks como Next.js.",
+              text: "Experiencia básica en HTML, CSS, JavaScript, SQL Server, Flask y frameworks como Next.js.",
             },
             {
               icon: <FaLaptopCode className="text-5xl text-cyan-500 mx-auto mb-4" />,

@@ -1,26 +1,50 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaRegCalendarAlt } from "react-icons/fa";
+import { FaRegCalendarAlt, FaGithub} from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
+import React from "react";
 
 const feedbacks = [
-  { week: 1, text: "Introducción al curso y organización del trabajo en equipo. Reflexión sobre la importancia de la planificación." },
-  { week: 2, text: "Aprendí sobre los fundamentos de HTML y la estructura básica de una página web." },
-  { week: 3, text: "Implementé estilos con CSS y practiqué diseño responsivo." },
-  { week: 4, text: "Exploré los fundamentos de JavaScript y su aplicación en la interactividad del sitio." },
-  { week: 5, text: "Conocí sobre frameworks frontend como React y su estructura basada en componentes." },
-  { week: 6, text: "Integré un servidor básico usando Flask y conecté con bases de datos SQL Server." },
-  { week: 7, text: "Aprendí a manejar rutas y renderizado dinámico en aplicaciones web." },
-  { week: 8, text: "Desarrollé el módulo de registro e inicio de sesión con validaciones." },
-  { week: 9, text: "Diseñé el sistema de filtrado y búsqueda de productos en la tienda." },
-  { week: 10, text: "Optimicé la interfaz visual usando Tailwind CSS y componentes reutilizables." },
-  { week: 11, text: "Implementé funciones de carrito de compras y lista de deseos." },
-  { week: 12, text: "Exploré la integración con APIs externas y el consumo de datos JSON." },
-  { week: 13, text: "Analicé el despliegue de proyectos en la nube con Azure." },
-  { week: 14, text: "Me enfoqué en las pruebas de usabilidad y corrección de errores." },
-  { week: 15, text: "Realicé ajustes visuales, agregué animaciones y mejoré la accesibilidad." },
-  { week: 16, text: "Presentación final del portafolio y reflexión general sobre el aprendizaje adquirido." },
+  { week: 1, text: "Exposición de sílabo, explicación de los fundamentos de las tecnologías web y organización del trabajo en equipo." },
+  { week: 2, text: "Exposición sobre los fundamentos de HTML, CSS básico y CSS avanzado" },
+  { week: 3, text: "Desarrollo de la primera práctica calificada https://github.com/Nickr4r/PRACTICA-CALIFICADA---01 . Desarrollo de la segunda práctica calificada https://github.com/sayles1309/Practica-Calificada-02 ."},
+  { week: 4, text: "Presentamos una exposición sobre los frameworks Tailwind CSS y Bootstrap https://github.com/ManuelYanceyan/Trabajos-en-equipo . Y exposicón de JavaScript y Javascript avanzado" },
+  { week: 5, text: "Desarrollo de la tercera práctica calificada https://github.com/rikmanu1999-source/PRACTICA_JAVASCRIPT . También se hizo una introducción a React." },
+  { week: 6, text: "Sesión de clase sobre los componentes en React y revisión de proyectos creados." },
+  { week: 7, text: "Sesión de clase sobre y elaboración de algunos ejemplos usando React y revisión de portafolios https://github.com/alex02-beep/portafolio-web ." },
+  { week: 8, text: "Parcial del curso de Desarrollo de Aplicaciones Web" },
+  { week: 9, text: "" },
+  { week: 10, text: "" },
+  { week: 11, text: "" },
+  { week: 12, text: "" },
+  { week: 13, text: "" },
+  { week: 14, text: "" },
+  { week: 15, text: "" },
+  { week: 16, text: "" },
 ];
+
+function parseLinks(text: string): React.ReactNode[] {
+  const urlRegex = /(https?:\/\/[^\s]+)/g;
+  const parts = text.split(urlRegex);
+
+  return parts.map((part, index) => {
+    if (urlRegex.test(part)) {
+      return (
+        <a
+          key={index}
+          href={part}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-500 underline inline-flex items-center gap-1"
+        >
+          <FaGithub />
+        </a>
+      );
+    }
+    return <span key={index}>{part}</span>;
+  });
+}
 
 export default function Feedback() {
   return (
@@ -64,8 +88,8 @@ export default function Feedback() {
                   Semana {item.week}
                 </h3>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  {item.text}
-                </p>
+  {parseLinks(item.text)}
+</p>
               </div>
             </div>
           </motion.div>
@@ -83,6 +107,7 @@ export default function Feedback() {
         Este registro refleja cómo la práctica constante y la integración de nuevas herramientas 
         consolidaron mis habilidades técnicas y de trabajo colaborativo.
       </motion.p>
+
     </section>
   );
 }
