@@ -9,7 +9,7 @@ export default function About() {
       id="about"
       className="min-h-screen w-full flex flex-col justify-center items-center bg-gradient-to-br from-blue-50 via-white to-indigo-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-800 dark:text-gray-100 relative overflow-hidden"
     >
-      {/* Efecto de fondo animado */}
+
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-blue-400/10 via-transparent to-transparent blur-3xl"></div>
 
       <motion.div

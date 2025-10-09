@@ -37,7 +37,7 @@ export default function Feedback() {
         Retroalimentación Semanal
       </motion.h2>
 
-      {/* Línea de tiempo central */}
+
       <div className="relative w-full max-w-6xl">
         <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-indigo-400 dark:border-indigo-600"></div>
 
@@ -72,7 +72,7 @@ export default function Feedback() {
         ))}
       </div>
 
-      {/* Mensaje final */}
+ 
       <motion.p
         className="mt-16 text-lg text-gray-800 dark:text-gray-300 max-w-3xl text-center"
         initial={{ opacity: 0, y: 20 }}

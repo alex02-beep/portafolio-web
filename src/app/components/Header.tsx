@@ -2,7 +2,7 @@ export default function Header() {
   return (
     <section id="inicio" className="relative flex flex-col items-center justify-center text-center min-h-screen bg-gradient-to-br from-blue-600 to-indigo-700 text-white">
       
-      {/* Fondo semitransparente */}
+      
       <div className="absolute inset-0 bg-[url('/foto-de-prueba.jpg')] bg-cover bg-center opacity-30"></div>
       <div className="relative z-10 max-w-2xl px-6">
         <h1 className="text-5xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">
