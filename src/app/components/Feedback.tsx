@@ -12,7 +12,7 @@ const feedbacks = [
   { week: 4, text: "Presentamos una exposición sobre los frameworks Tailwind CSS y Bootstrap https://github.com/ManuelYanceyan/Trabajos-en-equipo . Y exposicón de JavaScript y Javascript avanzado" },
   { week: 5, text: "Desarrollo de la tercera práctica calificada https://github.com/rikmanu1999-source/PRACTICA_JAVASCRIPT . También se hizo una introducción a React." },
   { week: 6, text: "Sesión de clase sobre los componentes en React y revisión de proyectos creados." },
-  { week: 7, text: "Sesión de clase sobre y elaboración de algunos ejemplos usando React y revisión de portafolios https://github.com/alex02-beep/portafolio-web ." },
+  { week: 7, text: "Sesión de clase sobre React y elaboración de algunos ejemplos usando React y revisión de portafolios https://github.com/alex02-beep/portafolio-web ." },
   { week: 8, text: "Parcial del curso de Desarrollo de Aplicaciones Web" },
   { week: 9, text: "" },
   { week: 10, text: "" },
