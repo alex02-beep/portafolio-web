@@ -13,46 +13,46 @@ const feedbacks = [
       "Esta semana se realizó la presentación formal del sílabo, explicando la estructura, objetivos y metodología del curso. Se introdujeron los fundamentos de las tecnologías web, incluyendo la diferencia entre sitio web, aplicación web, página web y sistema web. Se explicaron conceptos clave como DNS, TCP/IP, HTTP y los roles en el desarrollo web (frontend, backend, fullstack). También se organizaron los equipos de trabajo y se presentó Visual Studio Code como herramienta principal de desarrollo.",
     retroalimentacion:
       "Excelente inicio para sentar las bases del curso. La claridad en la explicación de los roles y tecnologías web es crucial para que los estudiantes comprendan el ecosistema en el que se desenvolverán. Se sugiere reforzar con ejemplos cotidianos el funcionamiento de protocolos como HTTP y DNS. La organización temprana de equipos favorece el trabajo colaborativo durante el semestre.",
-    galeria: ["/images/semana1-1.png", "/images/semana1-2.png"],
+    galeria: ["https://marcalima.pe/wp-content/uploads/2024/03/el-desarrollo-web.png", "https://repository-images.githubusercontent.com/375746210/81b82e80-d5f4-11eb-9df8-1720cd025c75"],
   },
   {
     week: 2,
     text: "Exposición sobre los fundamentos de HTML, CSS básico y CSS avanzado.",
     resumen:
-      "Se profundizó en el estándar Open Web Platform, HTML5 y XML. Se trabajó en la estructura de documentos HTML, el árbol DOM y su renderizado. Se introdujo CSS3 con sintaxis, unidades de medida, Flexbox, Grid y diseño responsivo. En el laboratorio se practicó la construcción de una página web aplicando estos conceptos, con énfasis en la optimización SEO y la compatibilidad entre navegadores.",
+      "Se profundizó en el estándar Open Web Platform, HTML5 y XML. Se trabajó en la estructura de documentos HTML, el árbol DOM y su renderizado. Se introdujo CSS3 con sintaxis, unidades de medida, Flexbox, Grid y diseño responsivo. Se realizó una práctica donde se trabajó en equipo utilizando GitHub para crear un proyecto web con HTML y CSS puro, sin usar librerías externas. Desarrollamos varias páginas (index, page01, page02 y page03) con formularios, animaciones, efectos visuales como hover y drag and drop, además de diseño responsivo. Cada integrante trabajó en su propia rama y el líder se encargó de integrar todo el proyecto y entregarlo a tiempo.",
     retroalimentacion:
       "La transición de HTML a CSS fue fluida y bien estructurada. Es importante que los estudiantes dominen el modelo de caja y las unidades relativas/absolutas antes de pasar a frameworks. Se recomienda incluir ejercicios que simulen problemas reales de maquetación, como la adaptación de un diseño a distintos dispositivos.",
-    galeria: ["/images/semana2-1.png"],
+    galeria: ["/imagen.jpg","/imagen.png"],
   },
   {
     week: 3,
-    text: "Desarrollo de prácticas calificadas con HTML, CSS y JavaScript.",
-    resumen: "Esta semana se centró en el uso de frameworks CSS: Bootstrap y Tailwind CSS. Se exploraron componentes, tipografía, layouts, y utilidades para diseño responsivo. Los estudiantes desarrollaron sitios web aplicando ambos frameworks y comprendieron cuándo es más adecuado usar uno u otro. Se realizó la primera práctica calificada, enfocada en el desarrollo de un sitio web usando CSS puro y frameworks.",
+    text: "Desarrollo de la primera y segunda práctica calificada con HTML, CSS y JavaScript.",
+    resumen: "Esta semana se centró en el uso de frameworks CSS: Bootstrap y Tailwind CSS. Se exploraron componentes, tipografía, layouts, y utilidades para diseño responsivo. Se realizo un práctica donde se trabajó en equipos de tres personas para desarrollar un proyecto web utilizando HTML y Tailwind CSS. Cada integrante trabajó en su propia rama dentro de un repositorio en GitHub, y el líder del equipo fue el responsable de crear el proyecto, integrar el trabajo final y enviarlo. Se creó varias páginas con diseño responsivo: una con listas de mensajes en un grid adaptable, otra con cards informativas sobre playas y ciudades del Perú organizadas con Flexbox, y una más que replica el diseño de una página dada, incluyendo efectos de opacidad al pasar el cursor.",
     retroalimentacion:
       "Muy acertado comparar Bootstrap y Tailwind, ya que esto ayuda a los estudiantes a decidir cuál usar según el proyecto. La práctica calificada fue una buena oportunidad para aplicar lo aprendido. Se sugiere revisar el uso de clases utilitarias en Tailwind y la personalización de componentes en Bootstrap.",
-    galeria: ["/images/semana3-1.png", "/images/semana3-2.png"],
+    galeria: ["/Ejercicio-resuelto.png", "/Ejercicio-practica2.png"],
   },
   {
     week: 4,
-    text: "Exposición sobre frameworks CSS y JavaScript avanzado.",
+    text: "Presentamos una exposición sobre los frameworks Tailwind CSS y Bootstrap. Además, exposicón de JavaScript y Javascript avanzado",
     resumen:
       "Se dio inicio al módulo de JavaScript y TypeScript. Se cubrieron variables, operadores, tipos de datos, estructuras de control, funciones (tradicionales, flecha, closures) y manipulación del DOM. También se introdujo el elemento Canvas para gráficos y animaciones. Se presentaron exposiciones sobre Bootstrap, Tailwind y JavaScript avanzado.",
     retroalimentacion:
       "La progresión desde lo básico hasta conceptos avanzados de JavaScript fue adecuada. La manipulación del DOM y las funciones son pilares para el desarrollo frontend. Sería útil incluir ejemplos de validación de formularios y interacción con APIs básicas para preparar el terreno para React.",
-    galeria: ["/images/semana4-1.png"],
+    galeria: ["/Exposicion-semana4.png","/Exposicion-semana4-2.png"],
   },
   {
     week: 5,
     text: "Desarrollo de la tercera práctica calificada e introducción a React.",
     resumen:
-      "Se consolidaron los conocimientos en JavaScript con la tercera práctica calificada, donde los estudiantes desarrollaron aplicaciones interactivas. Se introdujo React como framework de frontend, explicando su filosofía basada en componentes y su ventaja sobre JavaScript vanilla para aplicaciones complejas.",
+      "Se consolidaron los conocimientos en JavaScript con la tercera práctica calificada, donde trabajamos en equipos de tres personas y desarrollamos una aplicación web con HTML, CSS y JavaScript puro, usando GitHub para la colaboración. Implementamos una ruleta dinámica que giraba al hacer clic, presionar space o un botón, y mostraba un elemento aleatorio ingresado desde un textarea, con funciones como edición, ocultar elementos sorteados, guardar datos en localStorage y reinicio. También creamos un sorteo de equipos configurable por cantidad de equipos o participantes, mostrando los resultados organizados y con opciones para exportar o copiar la información generada.",
     retroalimentacion:
       "La práctica calificada permitió medir el dominio de JavaScript. La introducción a React en esta etapa es estratégica, ya que los estudiantes ya tienen bases sólidas. Se recomienda empezar con ejemplos simples de componentes de clase y función, antes de entrar en Hooks.",
-    galeria: ["/images/semana5-1.png", "/images/semana5-2.png"],
+    galeria: ["/Practica3-1.png", "/Practica3-2.png"],
   },
   {
     week: 6,
-    text: "Desarrollo de la tercera práctica calificada e introducción a React.",
+    text: "Sesión de clase sobre los componentes en React y revisión de proyectos creados.",
     resumen:
       "Se profundizó en React: creación de componentes, uso de props, children, y composición. Se revisaron proyectos en desarrollo y se orientó a los estudiantes en la estructuración de aplicaciones basadas en componentes. También se practicó el paso de datos entre componentes y el uso de condiciones y bucles en JSX.",
     retroalimentacion:
@@ -61,7 +61,7 @@ const feedbacks = [
   },
   {
     week: 7,
-    text: "Desarrollo de la tercera práctica calificada e introducción a React.",
+    text: "Sesión de clase sobre React y elaboración de algunos ejemplos usando React y revisión de portafolios.",
     resumen:
       "Se avanzó en React con el uso de Hooks (useState, useEffect, useContext, etc.), estilos en componentes, y consumo de APIs usando Axios. Los estudiantes presentaron avances de sus portafolios web y se realizaron ejemplos integrados que incluían routing y manejo de estado global.",
     retroalimentacion:
@@ -70,7 +70,7 @@ const feedbacks = [
   },
   {
     week: 8,
-    text: "Desarrollo de la tercera práctica calificada e introducción a React.",
+    text: "Parcial del curso de Desarrollo de Aplicaciones Web",
     resumen:
       "Semana de evaluación parcial. Los estudiantes rindieron un examen que cubrió todos los temas de la Unidad I: Desde fundamentos web hasta React.",
     retroalimentacion:
