@@ -5,6 +5,7 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Feedback from "./components/Feedback"
 import { FcFeedback } from "react-icons/fc";
+import ReflexionFinal from "./components/Reflection";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       <Header />
       <About />
       <Feedback />
-      <Skills />
+      <ReflexionFinal />
       <Contact />
     </main>
   );

@@ -9,7 +9,8 @@ const feedbacks = [
   {
     week: 1,
     text: "Exposición de sílabo, explicación de los fundamentos de las tecnologías web y organización del trabajo en equipo.",
-    resumen: "Esta semana se realizó la presentación formal del sílabo, explicando la estructura,objetivos y metodología del curso. Se introdujeron los fundamentos de las tecnologías web, incluyendo la diferencia entre sitio web, aplicación web, página web y sistema web. Se explicaron conceptos clave como DNS, TCP/IP, HTTP y los roles en el desarrollo web (frontend, backend, fullstack). También se organizaron los equipos de trabajo y se presentó Visual Studio Code como herramienta principal de desarrollo.",
+    resumen:
+      "Esta semana se realizó la presentación formal del sílabo, explicando la estructura, objetivos y metodología del curso. Se introdujeron los fundamentos de las tecnologías web, incluyendo la diferencia entre sitio web, aplicación web, página web y sistema web. Se explicaron conceptos clave como DNS, TCP/IP, HTTP y los roles en el desarrollo web (frontend, backend, fullstack). También se organizaron los equipos de trabajo y se presentó Visual Studio Code como herramienta principal de desarrollo.",
     retroalimentacion:
       "Excelente inicio para sentar las bases del curso. La claridad en la explicación de los roles y tecnologías web es crucial para que los estudiantes comprendan el ecosistema en el que se desenvolverán. Se sugiere reforzar con ejemplos cotidianos el funcionamiento de protocolos como HTTP y DNS. La organización temprana de equipos favorece el trabajo colaborativo durante el semestre.",
     galeria: ["/images/semana1-1.png", "/images/semana1-2.png"],
@@ -17,62 +18,63 @@ const feedbacks = [
   {
     week: 2,
     text: "Exposición sobre los fundamentos de HTML, CSS básico y CSS avanzado.",
-    resumen: "Se trabajó la estructura semántica de HTML y el diseño con CSS básico y avanzado.",
+    resumen:
+      "Se profundizó en el estándar Open Web Platform, HTML5 y XML. Se trabajó en la estructura de documentos HTML, el árbol DOM y su renderizado. Se introdujo CSS3 con sintaxis, unidades de medida, Flexbox, Grid y diseño responsivo. En el laboratorio se practicó la construcción de una página web aplicando estos conceptos, con énfasis en la optimización SEO y la compatibilidad entre navegadores.",
     retroalimentacion:
-      "Aprendí a estructurar correctamente una página web, aplicar estilos coherentes y utilizar flexbox y grid para layouts modernos.",
+      "La transición de HTML a CSS fue fluida y bien estructurada. Es importante que los estudiantes dominen el modelo de caja y las unidades relativas/absolutas antes de pasar a frameworks. Se recomienda incluir ejercicios que simulen problemas reales de maquetación, como la adaptación de un diseño a distintos dispositivos.",
     galeria: ["/images/semana2-1.png"],
   },
   {
     week: 3,
     text: "Desarrollo de prácticas calificadas con HTML, CSS y JavaScript.",
-    resumen: "Se realizaron ejercicios prácticos aplicando interactividad con JavaScript.",
+    resumen: "Esta semana se centró en el uso de frameworks CSS: Bootstrap y Tailwind CSS. Se exploraron componentes, tipografía, layouts, y utilidades para diseño responsivo. Los estudiantes desarrollaron sitios web aplicando ambos frameworks y comprendieron cuándo es más adecuado usar uno u otro. Se realizó la primera práctica calificada, enfocada en el desarrollo de un sitio web usando CSS puro y frameworks.",
     retroalimentacion:
-      "Mejoré la lógica de programación y aprendí a combinar la manipulación del DOM con estilos dinámicos.",
+      "Muy acertado comparar Bootstrap y Tailwind, ya que esto ayuda a los estudiantes a decidir cuál usar según el proyecto. La práctica calificada fue una buena oportunidad para aplicar lo aprendido. Se sugiere revisar el uso de clases utilitarias en Tailwind y la personalización de componentes en Bootstrap.",
     galeria: ["/images/semana3-1.png", "/images/semana3-2.png"],
   },
   {
     week: 4,
     text: "Exposición sobre frameworks CSS y JavaScript avanzado.",
     resumen:
-      "Se exploraron frameworks como Tailwind CSS y Bootstrap, además de temas avanzados en JavaScript.",
+      "Se dio inicio al módulo de JavaScript y TypeScript. Se cubrieron variables, operadores, tipos de datos, estructuras de control, funciones (tradicionales, flecha, closures) y manipulación del DOM. También se introdujo el elemento Canvas para gráficos y animaciones. Se presentaron exposiciones sobre Bootstrap, Tailwind y JavaScript avanzado.",
     retroalimentacion:
-      "Aprendí cómo los frameworks aceleran el desarrollo y cómo modular el código JS para mantenerlo escalable.",
+      "La progresión desde lo básico hasta conceptos avanzados de JavaScript fue adecuada. La manipulación del DOM y las funciones son pilares para el desarrollo frontend. Sería útil incluir ejemplos de validación de formularios y interacción con APIs básicas para preparar el terreno para React.",
     galeria: ["/images/semana4-1.png"],
   },
   {
     week: 5,
     text: "Desarrollo de la tercera práctica calificada e introducción a React.",
     resumen:
-      "Implementamos componentes básicos de React y entendimos el flujo de datos entre ellos.",
+      "Se consolidaron los conocimientos en JavaScript con la tercera práctica calificada, donde los estudiantes desarrollaron aplicaciones interactivas. Se introdujo React como framework de frontend, explicando su filosofía basada en componentes y su ventaja sobre JavaScript vanilla para aplicaciones complejas.",
     retroalimentacion:
-      "React permitió organizar mejor el código y entender el concepto de UI dinámica.",
+      "La práctica calificada permitió medir el dominio de JavaScript. La introducción a React en esta etapa es estratégica, ya que los estudiantes ya tienen bases sólidas. Se recomienda empezar con ejemplos simples de componentes de clase y función, antes de entrar en Hooks.",
     galeria: ["/images/semana5-1.png", "/images/semana5-2.png"],
   },
   {
     week: 6,
     text: "Desarrollo de la tercera práctica calificada e introducción a React.",
     resumen:
-      "Implementamos componentes básicos de React y entendimos el flujo de datos entre ellos.",
+      "Se profundizó en React: creación de componentes, uso de props, children, y composición. Se revisaron proyectos en desarrollo y se orientó a los estudiantes en la estructuración de aplicaciones basadas en componentes. También se practicó el paso de datos entre componentes y el uso de condiciones y bucles en JSX.",
     retroalimentacion:
-      "React permitió organizar mejor el código y entender el concepto de UI dinámica.",
+      "La revisión de proyectos en clase fue muy valiosa para identificar áreas de mejora. Es clave que los estudiantes entiendan la unidireccionalidad de los datos en React. Se sugiere practicar el lifting state up y el uso de contextos simples para evitar el prop drilling.",
     galeria: ["/images/semana5-1.png", "/images/semana5-2.png"],
   },
   {
     week: 7,
     text: "Desarrollo de la tercera práctica calificada e introducción a React.",
     resumen:
-      "Implementamos componentes básicos de React y entendimos el flujo de datos entre ellos.",
+      "Se avanzó en React con el uso de Hooks (useState, useEffect, useContext, etc.), estilos en componentes, y consumo de APIs usando Axios. Los estudiantes presentaron avances de sus portafolios web y se realizaron ejemplos integrados que incluían routing y manejo de estado global.",
     retroalimentacion:
-      "React permitió organizar mejor el código y entender el concepto de UI dinámica.",
+      "El uso de Hooks es fundamental en React moderno. La integración con APIs y el manejo de efectos secundarios con useEffect son destrezas clave. Se recomienda reforzar el manejo de estados asíncronos y la estructuración de proyectos con carpetas y convenciones claras.",
     galeria: ["/images/semana5-1.png", "/images/semana5-2.png"],
   },
   {
     week: 8,
     text: "Desarrollo de la tercera práctica calificada e introducción a React.",
     resumen:
-      "Implementamos componentes básicos de React y entendimos el flujo de datos entre ellos.",
+      "Semana de evaluación parcial. Los estudiantes rindieron un examen que cubrió todos los temas de la Unidad I: Desde fundamentos web hasta React.",
     retroalimentacion:
-      "React permitió organizar mejor el código y entender el concepto de UI dinámica.",
+      "La evaluación parcial fue un cierre adecuado para la primera mitad del curso. La retroalimentación grupal permite clarificar dudas y preparar a los estudiantes para la unidad de backend. Es importante reconocer el esfuerzo y destacar los avances logrados hasta el momento.",
     galeria: ["/images/semana5-1.png", "/images/semana5-2.png"],
   },
 ];
@@ -113,10 +115,10 @@ export default function Feedback() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
       >
-        Retroalimentación Semanal
+        Cuaderno
       </motion.h2>
 
-
+      {/* Línea central del timeline */}
       <div className="relative w-full max-w-6xl">
         <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-indigo-400 dark:border-indigo-600"></div>
 
@@ -168,14 +170,14 @@ export default function Feedback() {
         técnicas y de trabajo colaborativo.
       </motion.p>
 
-
+      {/* Modal con scroll interno */}
       {selectedFeedback && (
         <motion.div
           className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
         >
-          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-8 max-w-lg w-full relative">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-8 max-w-lg w-full relative max-h-[80vh] overflow-y-auto">
             <button
               onClick={() => setSelectedFeedback(null)}
               className="absolute top-3 right-3 text-gray-600 dark:text-gray-300 hover:text-red-500 transition"
@@ -187,34 +189,35 @@ export default function Feedback() {
               Semana {selectedFeedback.week}
             </h3>
 
-            <p className="text-gray-700 dark:text-gray-300 mb-4">
-              <strong>Resumen:</strong> {selectedFeedback.resumen}
-            </p>
-            <p className="text-gray-700 dark:text-gray-300 mb-4">
-              <strong>Retroalimentación:</strong>{" "}
-              {selectedFeedback.retroalimentacion}
-            </p>
+            <div className="text-gray-700 dark:text-gray-300 space-y-4">
+              <p>
+                <strong>Resumen:</strong> {selectedFeedback.resumen}
+              </p>
+              <p>
+                <strong>Retroalimentación:</strong>{" "}
+                {selectedFeedback.retroalimentacion}
+              </p>
 
-            <div>
-            
-              <strong className="text-gray-800 dark:text-gray-200">
-                Galería:
-              </strong>
-              <div className="grid grid-cols-2 gap-3 mt-2">
-                {selectedFeedback.galeria?.length > 0 ? (
-                  selectedFeedback.galeria.map((img: string, i: number) => (
-                    <img
-                      key={i}
-                      src={img}
-                      alt={`Semana ${selectedFeedback.week} - ${i + 1}`}
-                      className="rounded-lg shadow-md object-cover w-full h-32"
-                    />
-                  ))
-                ) : (
-                  <p className="text-gray-500 dark:text-gray-400 italic">
-                    Sin imágenes disponibles
-                  </p>
-                )}
+              <div>
+                <strong className="text-gray-800 dark:text-gray-200">
+                  Galería:
+                </strong>
+                <div className="grid grid-cols-2 gap-3 mt-2">
+                  {selectedFeedback.galeria?.length > 0 ? (
+                    selectedFeedback.galeria.map((img: string, i: number) => (
+                      <img
+                        key={i}
+                        src={img}
+                        alt={`Semana ${selectedFeedback.week} - ${i + 1}`}
+                        className="rounded-lg shadow-md object-cover w-full h-32"
+                      />
+                    ))
+                  ) : (
+                    <p className="text-gray-500 dark:text-gray-400 italic">
+                      Sin imágenes disponibles
+                    </p>
+                  )}
+                </div>
               </div>
             </div>
           </div>
