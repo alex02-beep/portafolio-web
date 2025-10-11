@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import Feedback from "./components/Feedback"
 import { FcFeedback } from "react-icons/fc";
 import ReflexionFinal from "./components/Reflection";
+import Bibliografia from "./components/Bibliografia";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <Feedback />
       <ReflexionFinal />
+      <Bibliografia />
       <Contact />
     </main>
   );

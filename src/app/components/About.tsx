@@ -13,23 +13,44 @@ export default function About() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-blue-400/10 via-transparent to-transparent blur-3xl"></div>
 
       <motion.div
-        className="max-w-5xl mx-auto px-8 text-center relative z-10"
+        className="max-w-6xl mx-auto px-8 text-center relative z-10"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
+
         <h2 className="text-5xl font-extrabold bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent mb-8">
           Sobre mí
         </h2>
 
-        <p className="text-lg md:text-xl leading-relaxed mb-12 max-w-3xl mx-auto">
-          ¡Hola! Soy <span className="font-semibold text-blue-600">Alex</span>, estudiante de{" "}
-          Ingeniería de Sistemas apasionado por el desarrollo web,
-          la optimización de sistemas y el diseño de experiencias digitales.
-          Me encanta aprender tecnologías nuevas y transformar ideas en proyectos reales
-          que aporten valor a las personas y empresas.
-        </p>
 
+        <div className="flex flex-col md:flex-row items-center justify-center gap-10 mb-12">
+
+          <motion.div
+            className="w-48 h-48 rounded-full overflow-hidden border-4 border-blue-500 shadow-xl"
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+          >
+            <img
+              src="/Foto.jpg" 
+              alt="Foto de Alex"
+              className="w-full h-full object-cover"
+            />
+          </motion.div>
+
+
+          <p className="text-lg md:text-xl leading-relaxed max-w-3xl">
+            ¡Hola! Soy{" "}
+            <span className="font-semibold text-blue-600">Alex</span>, estudiante de{" "}
+            <strong>Ingeniería de Sistemas</strong> apasionado por el desarrollo web,
+            la optimización de sistemas y el diseño de experiencias digitales.
+            Me encanta aprender nuevas tecnologías y transformar ideas en proyectos reales
+            que aporten valor a las personas y empresas.
+          </p>
+        </div>
+
+ 
         <div className="grid md:grid-cols-3 gap-10 mt-10">
           {[
             {

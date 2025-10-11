@@ -32,6 +32,13 @@ export default function Navbar() {
                         <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
                     </a>
                     <a
+                        href="#bibliografia"
+                        className="relative text-gray-800 dark:text-gray-200 hover:text-blue-500 transition-colors duration-300 group"
+                    >
+                        Bibliografía
+                        <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a
                         href="#contact"
                         className="relative text-gray-800 dark:text-gray-200 hover:text-blue-500 transition-colors duration-300 group"
                     >

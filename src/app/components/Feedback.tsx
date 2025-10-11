@@ -30,7 +30,7 @@ const feedbacks = [
       "Se profundizó en el estándar Open Web Platform, HTML5 y XML. Se trabajó en la estructura de documentos HTML, el árbol DOM y su renderizado. Se introdujo CSS3 con sintaxis, unidades de medida, Flexbox, Grid y diseño responsivo. Se realizó una práctica donde se trabajó en equipo utilizando GitHub para crear un proyecto web con HTML y CSS puro, sin usar librerías externas. Desarrollamos varias páginas (index, page01, page02 y page03) con formularios, animaciones, efectos visuales como hover y drag and drop, además de diseño responsivo. Cada integrante trabajó en su propia rama y el líder se encargó de integrar todo el proyecto y entregarlo a tiempo.",
     retroalimentacion:
       "La transición de HTML a CSS fue fluida y bien estructurada. Es importante que los estudiantes dominen el modelo de caja y las unidades relativas/absolutas antes de pasar a frameworks. Se recomienda incluir ejercicios que simulen problemas reales de maquetación, como la adaptación de un diseño a distintos dispositivos.",
-    galeria: ["/imagen.jpg","/imagen.png"],
+    galeria: ["https://blog.walthercuro.com/wp-content/uploads/2024/10/maquetacion-email-html-1024x536.png","https://www.dongee.com/tutoriales/content/images/2023/01/image-6.png"],
   },
   {
     week: 3,
