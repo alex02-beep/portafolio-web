@@ -5,6 +5,14 @@ import { FaRegCalendarAlt, FaGithub, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 import React from "react";
 
+type FeedbackItem = {
+  week: number;
+  text: string;
+  resumen: string;
+  retroalimentacion: string;
+  galeria: string[];
+};
+
 const feedbacks = [
   {
     week: 1,
@@ -57,7 +65,7 @@ const feedbacks = [
       "Se profundizó en React: creación de componentes, uso de props, children, y composición. Se revisaron proyectos en desarrollo y se orientó a los estudiantes en la estructuración de aplicaciones basadas en componentes. También se practicó el paso de datos entre componentes y el uso de condiciones y bucles en JSX.",
     retroalimentacion:
       "La revisión de proyectos en clase fue muy valiosa para identificar áreas de mejora. Es clave que los estudiantes entiendan la unidireccionalidad de los datos en React. Se sugiere practicar el lifting state up y el uso de contextos simples para evitar el prop drilling.",
-    galeria: ["/images/semana5-1.png", "/images/semana5-2.png"],
+    galeria: ["https://s3.amazonaws.com/angularminds.com/new-blog-images/top-react-ui-libraries.jpg", "https://miro.medium.com/v2/resize:fit:720/format:webp/1*DI8-i83BgCcukmPLhaFtRg.png"],
   },
   {
     week: 7,
@@ -66,7 +74,7 @@ const feedbacks = [
       "Se avanzó en React con el uso de Hooks (useState, useEffect, useContext, etc.), estilos en componentes, y consumo de APIs usando Axios. Los estudiantes presentaron avances de sus portafolios web y se realizaron ejemplos integrados que incluían routing y manejo de estado global.",
     retroalimentacion:
       "El uso de Hooks es fundamental en React moderno. La integración con APIs y el manejo de efectos secundarios con useEffect son destrezas clave. Se recomienda reforzar el manejo de estados asíncronos y la estructuración de proyectos con carpetas y convenciones claras.",
-    galeria: ["/images/semana5-1.png", "/images/semana5-2.png"],
+    galeria: ["https://trbl-services.eu/wp-content/uploads/2019/02/react-7.png", "/Portafolio.png"],
   },
   {
     week: 8,
@@ -75,7 +83,7 @@ const feedbacks = [
       "Semana de evaluación parcial. Los estudiantes rindieron un examen que cubrió todos los temas de la Unidad I: Desde fundamentos web hasta React.",
     retroalimentacion:
       "La evaluación parcial fue un cierre adecuado para la primera mitad del curso. La retroalimentación grupal permite clarificar dudas y preparar a los estudiantes para la unidad de backend. Es importante reconocer el esfuerzo y destacar los avances logrados hasta el momento.",
-    galeria: ["/images/semana5-1.png", "/images/semana5-2.png"],
+    galeria: ["https://www.quois.com/wp-content/uploads/2021/07/Las-fases-del-desarrollo-de-una-web.jpg.webp"],
   },
 ];
 
@@ -102,7 +110,7 @@ function parseLinks(text: string): React.ReactNode[] {
 }
 
 export default function Feedback() {
-  const [selectedFeedback, setSelectedFeedback] = useState<any>(null);
+  const [selectedFeedback, setSelectedFeedback] = useState<FeedbackItem | null>(null);
 
   return (
     <section
