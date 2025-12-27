@@ -9,7 +9,6 @@ type Semana = {
   reflexion: string;
   queAprendio: string;
   comoAprendio: string;
-  galeria?: string[];
 };
 
 const semanas: Semana[] = [
@@ -21,7 +20,6 @@ const semanas: Semana[] = [
       "Fundamentos de la web: diferencias entre sitio/aplicación, conceptos básicos como DNS, HTTP, TCP/IP y los roles (frontend/backend/fullstack).",
     comoAprendio:
       "Mediante exposiciones teóricas, ejemplos cotidianos, la presentación del sílabo y la práctica inicial con Visual Studio Code y organización de equipos.",
-    galeria: ["/images/semana1-1.png", "/images/semana1-2.png"],
   },
   {
     week: 2,
@@ -31,7 +29,6 @@ const semanas: Semana[] = [
       "Estructura semántica en HTML, DOM, CSS (unidades, box model), Flexbox y Grid, y conceptos básicos de SEO y compatibilidad entre navegadores.",
     comoAprendio:
       "Construyendo páginas en laboratorio y probando en distintos tamaños y navegadores; repasando ejemplos prácticos y corrigiendo errores de maquetado reales.",
-    galeria: ["/images/semana2-1.png"],
   },
   {
     week: 3,
@@ -41,7 +38,6 @@ const semanas: Semana[] = [
       "Uso práctico de frameworks CSS, manejo de utilidades (Tailwind) y personalización de componentes (Bootstrap).",
     comoAprendio:
       "Desarrollando ejercicios prácticos y la primera práctica calificada aplicando ambos frameworks en proyectos reales.",
-    galeria: ["/images/semana3-1.png", "/images/semana3-2.png"],
   },
   {
     week: 4,
@@ -51,7 +47,6 @@ const semanas: Semana[] = [
       "Variables, funciones, estructuras de control, manipulación del DOM, uso de Canvas y conceptos iniciales de TypeScript.",
     comoAprendio:
       "Resolviendo ejercicios guiados, viendo ejemplos en clase y realizando pequeñas prácticas sobre manipulación del DOM.",
-    galeria: ["/images/semana4-1.png"],
   },
   {
     week: 5,
@@ -61,7 +56,6 @@ const semanas: Semana[] = [
       "Dominio práctico de JavaScript y los conceptos básicos de React: componentes y la idea de UI declarativa.",
     comoAprendio:
       "A través de prácticas calificadas, ejemplos en clase y la explicación de la filosofía de React aplicada a casos pequeños.",
-    galeria: ["/images/semana5-1.png", "/images/semana5-2.png"],
   },
   {
     week: 6,
@@ -71,7 +65,6 @@ const semanas: Semana[] = [
       "Uso de props, children, composición de componentes y estructura de proyectos basados en componentes.",
     comoAprendio:
       "Desarrollando mini-proyectos, revisando ejemplos y analizando proyectos en clase con feedback del docente.",
-    galeria: ["/images/semana6-1.png", "/images/semana6-2.png"],
   },
   {
     week: 7,
@@ -81,7 +74,6 @@ const semanas: Semana[] = [
       "Uso de useState, useEffect, consumo de APIs con Axios y patrones para manejar estado y efectos secundarios.",
     comoAprendio:
       "Implementando ejemplos prácticos, integrando peticiones reales y desarrollando funciones en el portafolio con feedback iterativo.",
-    galeria: ["/images/semana7-1.png"],
   },
   {
     week: 8,
@@ -91,8 +83,82 @@ const semanas: Semana[] = [
       "Repaso y consolidación de conceptos de la Unidad I: desde fundamentos web hasta React básico y mejores prácticas.",
     comoAprendio:
       "Mediante el examen práctico-teórico, presentaciones y retroalimentación grupal que clarificó dudas y permitió ajustar el trabajo futuro.",
-    galeria: ["/images/semana8-1.png"],
   },
+
+
+
+  {
+    week: 9,
+    reflexion:
+      "Durante esta semana entendí cómo funciona el backend en aplicaciones web modernas, reconociendo la importancia de la arquitectura, servidores y comunicación cliente-servidor.",
+    queAprendio:
+      "Tipos de arquitecturas web (MPA, SPA, híbridas), gestión de servidores con Apache y Tomcat, uso de Maven, cloud hosting y autenticación por tokens.",
+    comoAprendio:
+      "Mediante clases teóricas, ejercicios prácticos de configuración de servidores y despliegue de aplicaciones, además de experimentar con Maven y seguridad web.",
+  },
+  {
+    week: 10,
+    reflexion:
+      "Aprender a desarrollar aplicaciones Java en el backend reforzó la comprensión del ciclo completo de un proyecto web, desde servidor hasta la API REST.",
+    queAprendio:
+      "Configuración y despliegue en Tomcat, desarrollo con JSP, patrón MVC, Spring Framework y Spring Boot para APIs REST con MySQL.",
+    comoAprendio:
+      "Combinando teoría con laboratorio práctico de creación de proyectos Java, implementación de APIs y pruebas con Postman.",
+  },
+  {
+    week: 11,
+    reflexion:
+      "Profundizar en APIs REST avanzadas me permitió comprender la importancia de la validación, manejo de errores y documentación profesional.",
+    queAprendio:
+      "Validaciones con Jakarta, manejo global de excepciones, paginación, filtros avanzados, documentación Swagger y pruebas con Postman.",
+    comoAprendio:
+      "Desarrollando endpoints personalizados y probando con Postman, aplicando buenas prácticas en un entorno de desarrollo real.",
+  },
+  {
+    week: 12,
+    reflexion:
+      "El desarrollo backend con Laravel consolidó conocimientos sobre autenticación, seguridad, validaciones y CRUD completos, mostrando el flujo seguro de una aplicación web.",
+    queAprendio:
+      "Autenticación de usuarios, middleware, protección CSRF, validaciones automáticas, CRUD con Eloquent y vistas con Blade.",
+    comoAprendio:
+      "Implementando proyectos prácticos de Laravel y siguiendo la lógica de flujos seguros en el backend, probando formularios y rutas protegidas.",
+  },
+  {
+    week: 13,
+    reflexion:
+      "Diseñar APIs RESTful reforzó la comprensión de cómo exponer datos de forma estructurada y segura, aplicando buenas prácticas de backend.",
+    queAprendio:
+      "Fundamentos de REST, HATEOAS, serialización de modelos, filtrado, paginación, uso de ruteadores, CSRF y AJAX.",
+    comoAprendio:
+      "Mediante laboratorios prácticos desarrollando un sistema backend, aplicando filtros, paginación y protecciones de seguridad en la API.",
+  },
+  {
+    week: 14,
+    reflexion:
+      "Aprender Python y frameworks web como Flask permitió ampliar mis competencias de backend, entendiendo cómo conectar servidores, lógica y plantillas dinámicas.",
+    queAprendio:
+      "Sintaxis básica de Python, buenas prácticas PEP8, gestión de dependencias con PIP, desarrollo de aplicaciones Flask y uso de Jinja2.",
+    comoAprendio:
+      "Con ejercicios prácticos de configuración de Apache con mod_wsgi, desarrollo de aplicaciones web con Flask y plantillas dinámicas.",
+  },
+  {
+    week: 15,
+    reflexion:
+      "Esta semana comprendí cómo funcionan los sistemas inteligentes, integrando IA, modelos de decisión, lógica difusa y LLM en aplicaciones web reales.",
+    queAprendio:
+      "Conceptos de sistemas inteligentes, percepción, razonamiento, aprendizaje adaptativo, redes neuronales, deep learning, modelos discriminativos y generativos, LLM como Llama 3.",
+    comoAprendio:
+      "Desarrollando aplicaciones en Python con Flask que integran un LLM local, aplicando reglas IF-THEN, lógica difusa y estructuras de decisión para emular sistemas inteligentes.",
+  },
+  {
+    week: 16,
+    reflexion:
+      "Esta semana integré todos los conocimientos del curso en un proyecto final de IA aplicado al análisis legal, comprendiendo cómo conectar frontend, backend y modelos de Machine Learning en un sistema profesional.",
+    queAprendio:
+      "Diseño de un sistema completo de inteligencia artificial para clasificación automática de textos de patentes, usando NLP, SVM, TF-IDF, arquitectura cliente-servidor con Flask y React, y base de datos MySQL.",
+    comoAprendio:
+      "Implementando el sistema final, integrando backend seguro con Flask y API REST, frontend en React, gestión de datos en MySQL y aplicando técnicas de NLP y Machine Learning para procesar textos legales.",
+  }
 ];
 
 export default function ReflexionFinal() {
@@ -113,11 +179,12 @@ export default function ReflexionFinal() {
       </motion.h2>
 
       <motion.div
-        className="w-full max-w-6xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+        className="w-full max-w-7xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
         initial="hidden"
         whileInView="show"
         viewport={{ amount: 0.2 }}
       >
+
         {semanas.map((s, i) => (
           <motion.button
             key={s.week}
@@ -188,25 +255,6 @@ export default function ReflexionFinal() {
                 <div>
                   <p className="font-semibold">¿Cómo aprendí?</p>
                   <p className="mt-1 text-justify">{seleccionada.comoAprendio}</p>
-                </div>
-
-                <div>
-                  <p className="font-semibold">Galería</p>
-                  <div className="mt-2 grid grid-cols-2 gap-3">
-                    {seleccionada.galeria && seleccionada.galeria.length > 0 ? (
-                      seleccionada.galeria.map((img, idx) => (
-                        <img
-                          key={idx}
-                          src={img}
-                          alt={`Semana ${seleccionada.week} imagen ${idx + 1}`}
-                          className="w-full h-36 object-cover rounded-lg shadow-sm"
-                          loading="lazy"
-                        />
-                      ))
-                    ) : (
-                      <p className="italic text-gray-500">Sin imágenes disponibles</p>
-                    )}
-                  </div>
                 </div>
               </div>
             </motion.div>

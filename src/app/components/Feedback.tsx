@@ -83,7 +83,79 @@ const feedbacks = [
       "Semana de evaluación parcial. Los estudiantes rindieron un examen que cubrió todos los temas de la Unidad I: Desde fundamentos web hasta React.",
     retroalimentacion:
       "La evaluación parcial fue un cierre adecuado para la primera mitad del curso. La retroalimentación grupal permite clarificar dudas y preparar a los estudiantes para la unidad de backend. Es importante reconocer el esfuerzo y destacar los avances logrados hasta el momento.",
-    galeria: ["https://www.quois.com/wp-content/uploads/2021/07/Las-fases-del-desarrollo-de-una-web.jpg.webp"],
+    galeria: ["https://www.quois.com/wp-content/uploads/2021/07/Las-fases-del-desarrollo-de-una-web.jpg.webp","https://www.jotform.com/blog/wp-content/uploads/2017/01/react-js-700x399.png"],
+  },
+  {
+    week: 9,
+    text: "Fundamentos del desarrollo Backend y entornos Server Side",
+    resumen:
+     "Semana dedicada al estudio del funcionamiento de las aplicaciones web desde el lado del servidor. Se abordaron las principales arquitecturas web (MPA, SPA, híbridas, MVC, multicapa y hexagonal), el modelo cliente-servidor, servidores web y de aplicaciones, hosting y cloud computing. Además, se trabajó con Apache Tomcat, JSP y la gestión de dependencias en proyectos Java mediante Maven, incorporando conceptos básicos de seguridad con autenticación basada en tokens.",
+    retroalimentacion:
+      "Esta semana permitió consolidar la comprensión del flujo completo del Server Side y su importancia en aplicaciones web modernas. Los estudiantes lograron identificar distintas arquitecturas y tecnologías según el contexto de uso, fortaleciendo su base para el desarrollo backend. Es un paso clave para afrontar proyectos más complejos y escalables en las siguientes unidades.",
+    galeria: ["https://facingenieria.udistrital.edu.co/laboratorios/labing/sites/labing/files/imagen-principal-laboratorio/2025-06/En%20construcci%C3%B3n%20%2870%29.png","https://www.muylinux.com/wp-content/uploads/2019/09/Jakarta.jpg"],
+  },
+  {
+    week: 10,
+    text: "Desarrollo Backend con Java y Frameworks Spring",
+    resumen:
+      "Semana centrada en el desarrollo de aplicaciones backend utilizando Java. Se trabajó con Apache Tomcat como servidor de aplicaciones, el uso de JSP para la creación de vistas dinámicas y la gestión de dependencias con Maven. Además, se abordó la implementación del patrón MVC y el desarrollo de APIs REST mediante Spring Framework y Spring Boot, integrando bases de datos MySQL y operaciones CRUD.",
+    retroalimentacion:
+      "Esta semana permitió consolidar habilidades clave en el desarrollo backend con Java, combinando tecnologías tradicionales como JSP con frameworks modernos como Spring Boot. Los estudiantes lograron comprender el flujo completo de una aplicación Java web, desde la configuración del servidor hasta la exposición y prueba de servicios REST, fortaleciendo su preparación para proyectos backend más robustos.",
+    galeria: ["crud-sem-9.png","mysql-sem-9.png"],
+  },
+  {
+    week: 11,
+    text: "Implementación profesional de APIs REST con Spring Boot",
+    resumen:
+      "Semana orientada al desarrollo avanzado de APIs REST utilizando Spring Boot. Se incorporaron validaciones de datos con Jakarta Validation, manejo global de excepciones, consultas personalizadas con Spring Data JPA, paginación y ordenamiento de resultados. Además, se documentaron los servicios mediante Swagger/OpenAPI y se realizaron pruebas completas de los endpoints utilizando Postman.",
+    retroalimentacion:
+      "Los contenidos de esta semana permitieron elevar la calidad y robustez de las APIs desarrolladas, aplicando buenas prácticas utilizadas en entornos profesionales. Los estudiantes lograron construir servicios REST más seguros, documentados y optimizados, fortaleciendo sus competencias para el desarrollo backend y la integración con aplicaciones cliente.",
+    galeria: ["sem11-1.png","sem11-2.png"],
+  },
+  {
+    week: 12,
+    text: "Desarrollo seguro de aplicaciones Backend con Laravel",
+    resumen:
+      "Semana enfocada en el desarrollo backend avanzado utilizando Laravel. Se trabajó la autenticación de usuarios mediante Laravel Breeze, la validación de formularios, el uso de middleware para la protección de rutas y la seguridad con tokens CSRF. Además, se desarrollaron operaciones CRUD completas utilizando Eloquent ORM y se profundizó en el uso de Blade para la construcción de vistas reutilizables y organizadas.",
+    retroalimentacion:
+      "Esta semana permitió reforzar conceptos clave de seguridad y estructura en aplicaciones web modernas desarrolladas con Laravel. Los estudiantes lograron integrar autenticación, control de acceso y operaciones CRUD de manera eficiente, consolidando buenas prácticas de desarrollo backend y fortaleciendo su capacidad para construir aplicaciones seguras y mantenibles.",
+    galeria: ["https://tekicha.com/images/laravel-featured.png?845b69e530cc37b6e466bc24b85d78c7","https://www.dongee.com/tutoriales/content/images/size/w1000/2023/01/image-65.png"],
+  },
+  {
+    week: 13,
+    text: "Diseño y construcción de APIs RESTful",
+    resumen:
+      "Semana dedicada al diseño de APIs RESTful, abordando los principios fundamentales de REST, el uso de APIs de hipermedios y el concepto de HATEOAS. Se trabajó la serialización de modelos y otras fuentes de datos, así como la implementación de filtrado, paginación y límites de uso. Además, se estudiaron conceptos clave como ruteadores, conjuntos de vistas, comunicación mediante AJAX y mecanismos de seguridad como CSRF y CORS, aplicando los conocimientos en un laboratorio práctico de desarrollo backend.",
+    retroalimentacion:
+      "Esta semana permitió reforzar el diseño correcto de APIs REST orientadas a la escalabilidad y el consumo eficiente de datos. La integración de conceptos de seguridad, control de acceso y buenas prácticas de comunicación entre cliente y servidor fortaleció las competencias técnicas necesarias para el desarrollo de servicios backend robustos y profesionales.",
+    galeria: ["sem13-1.png","sem13-2.png"],
+  },
+  {
+    week: 14,
+    text: "Introducción al desarrollo Backend con Python y Frameworks Web",
+    resumen:
+      "Semana orientada a los fundamentos del desarrollo backend utilizando Python. Se abordó el funcionamiento de servidores web con Apache HTTP Server, su integración con aplicaciones Python mediante mod_wsgi y la instalación y configuración del entorno de desarrollo. Además, se estudiaron los fundamentos del lenguaje Python, buenas prácticas de codificación bajo el estándar PEP 8 y el desarrollo de aplicaciones web básicas utilizando Flask, junto con el uso del motor de plantillas Jinja2.",
+    retroalimentacion:
+      "Esta semana permitió ampliar el panorama del desarrollo backend incorporando Python como alternativa a otros lenguajes y frameworks. Los estudiantes lograron comprender la integración entre servidor web y aplicaciones Python, aplicar buenas prácticas de programación y construir aplicaciones web funcionales con Flask, fortaleciendo su versatilidad técnica para distintos entornos de desarrollo.",
+    galeria: ["sem14-1.png","sem14-2.png"],
+  },
+  {
+    week: 15,
+    text: "Fundamentos y desarrollo de sistemas inteligentes con Python",
+    resumen:
+      "Semana dedicada al estudio de los sistemas inteligentes, abordando sus capacidades fundamentales como percepción, razonamiento, aprendizaje y toma de decisiones. Se analizaron sus principales ámbitos de aplicación y arquitecturas, así como algoritmos de decisión basados en reglas IF-THEN, lógica difusa y modelos de aprendizaje automático. Además, se exploraron conceptos de redes neuronales, deep learning, modelos discriminativos y generativos, y Large Language Models (LLM). A nivel práctico, se desarrolló una aplicación web con Flask que integra un modelo Llama 3 para interacción conversacional.",
+    retroalimentacion:
+      "Esta semana permitió comprender de forma integral cómo se diseñan y construyen sistemas inteligentes, combinando fundamentos teóricos de inteligencia artificial con una implementación práctica en entorno web. La integración de un LLM mediante Flask reforzó la relación entre backend e inteligencia artificial, consolidando competencias clave para el desarrollo de soluciones inteligentes modernas.",
+    galeria: ["sem15-1.png","sem15-2.png"],
+  },
+  {
+    week: 16,
+    text: "Diseño de un sistema de Inteligencia Artificial aplicado al análisis legal como Final de curso",
+    resumen:
+      "Semana dedicada al diseño de un sistema completo de inteligencia artificial para la clasificación automática de textos de patentes. Se analizó el modelo propuesto en el artículo PyPatentAlice y se implementó una solución basada en NLP y Machine Learning utilizando SVM y representación TF-IDF. El sistema fue estructurado bajo una arquitectura cliente-servidor en tres capas, integrando un backend con Flask y API REST segura, un frontend desarrollado en React y una base de datos MySQL para la gestión de usuarios y resultados.",
+    retroalimentacion:
+      "Esta última semana integró de manera efectiva los conocimientos adquiridos a lo largo del curso, combinando desarrollo web, arquitectura backend y modelos de inteligencia artificial. Los estudiantes lograron comprender cómo aplicar técnicas de NLP y Machine Learning en un contexto real, diseñando soluciones escalables y funcionales que conectan frontend, backend y modelos de IA en un sistema profesional.",
+    galeria: ["https://siemprendes.com/wp-content/uploads/2024/11/desarrollo-de-aplicaciones-web.jpg","sem16-1.png"],
   },
 ];
 
@@ -111,6 +183,7 @@ function parseLinks(text: string): React.ReactNode[] {
 
 export default function Feedback() {
   const [selectedFeedback, setSelectedFeedback] = useState<FeedbackItem | null>(null);
+  const [modalImage, setModalImage] = useState<string | null>(null); // <-- imagen emergente
 
   return (
     <section
@@ -129,7 +202,6 @@ export default function Feedback() {
       {/* Línea central del timeline */}
       <div className="relative w-full max-w-6xl">
         <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-indigo-400 dark:border-indigo-600"></div>
-
 
         {feedbacks.map((item, index) => (
           <motion.div
@@ -165,7 +237,6 @@ export default function Feedback() {
         ))}
       </div>
 
-
       <motion.p
         className="mt-16 text-lg text-gray-800 dark:text-gray-300 max-w-3xl text-center"
         initial={{ opacity: 0, y: 20 }}
@@ -178,7 +249,7 @@ export default function Feedback() {
         técnicas y de trabajo colaborativo.
       </motion.p>
 
-      {/* Modal con scroll interno */}
+      {/* Modal de feedback */}
       {selectedFeedback && (
         <motion.div
           className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-4"
@@ -217,7 +288,8 @@ export default function Feedback() {
                         key={i}
                         src={img}
                         alt={`Semana ${selectedFeedback.week} - ${i + 1}`}
-                        className="rounded-lg shadow-md object-cover w-full h-32"
+                        className="rounded-lg shadow-md object-cover w-full h-32 cursor-pointer"
+                        onClick={() => setModalImage(img)}
                       />
                     ))
                   ) : (
@@ -228,6 +300,35 @@ export default function Feedback() {
                 </div>
               </div>
             </div>
+          </div>
+        </motion.div>
+      )}
+
+      {/* Modal emergente de imagen */}
+      {modalImage && (
+        <motion.div
+          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-[100] p-4 cursor-pointer"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.8 }}
+          onClick={() => setModalImage(null)}
+        >
+          <div
+            className="relative max-w-[90vw] max-h-[90vh]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setModalImage(null)}
+              className="absolute top-2 right-2 text-white text-3xl font-bold z-10"
+              aria-label="Cerrar imagen"
+            >
+              ×
+            </button>
+            <img
+              src={modalImage}
+              alt="Imagen ampliada"
+              className="rounded-lg max-w-full max-h-[90vh] object-contain"
+            />
           </div>
         </motion.div>
       )}

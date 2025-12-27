@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang="es">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased transition-colors duration-500 bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100`}>
         <Navbar />
-        <main className="container mx-auto p-6">{children}</main>
+        <main className="w-full">{children}</main>
         <ScrollTopButton />
         <Footer />
       </body>
