@@ -18,7 +18,7 @@ export default function Contact() {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    alert(`Gracias ${formData.name}, tu mensaje fue enviado (demo).`);
+    alert(`Gracias ${formData.name}, tu mensaje fue enviado.`);
     setFormData({ name: "", email: "", message: "" });
   };
 
@@ -110,7 +110,8 @@ export default function Contact() {
 
         <div className="mt-8 flex items-center justify-center gap-8 text-2xl">
           <a
-            href="mailto:tuemail@correo.com"
+            href="https://www.microsoft.com/es-es/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2Fmail%2F0%2F&sdf=0"
+            target="_blank"
             aria-label="Enviar correo"
             className="text-white/90 hover:text-indigo-200 transition"
           >
@@ -118,7 +119,7 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://github.com/tuusuario"
+            href="https://github.com/alex02-beep"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -128,7 +129,7 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://linkedin.com/in/tuusuario"
+            href="https://www.linkedin.com/in/alex-cipriano-chagua-9178a63a1/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
